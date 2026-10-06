@@ -1,0 +1,28 @@
+{
+  "name": "base-nyan",
+  "version": "0.1.0",
+  "description": "猫の鳴き声 32 種をアルファベットに使うバイナリ→テキスト符号化。Base32 の A〜Z・2〜7 の代わりに、ニャーからンーまでを数字として使う。",
+  "type": "module",
+  "main": "./src/base-nyan.js",
+  "types": "./src/base-nyan.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/base-nyan.d.ts",
+      "default": "./src/base-nyan.js"
+    }
+  },
+  "bin": {
+    "base-nyan": "./src/cli.js"
+  },
+  "files": ["src", "SPEC.md", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build": "node tools/build-standalone.mjs"
+  },
+  "keywords": ["base-nyan", "base32", "base64", "encoding", "cat", "meow", "猫", "鳴き声", "符号化"],
+  "license": "MIT",
+  "author": "mati0516",
+  "repository": { "type": "git", "url": "git+https://github.com/mati0516/base-nyan.git" },
+  "homepage": "https://mati0516.github.io/base-nyan/",
+  "engines": { "node": ">=18" }
+}
